@@ -1,0 +1,153 @@
+<ThingDefs><List>
+		<!-- <ThingDef Type="Building" Name="FillBase">	
+			<TileID>223</TileID>
+			<Desc>RoofBase</Desc>
+			<SelectAble>1</SelectAble>	
+			<CastShadow>0</CastShadow>
+			<Beauty>2</Beauty>
+			<BlockMissile>0</BlockMissile>
+			<VisionRadius>0</VisionRadius>
+			<ColliderKind>None</ColliderKind>
+			<Collider> -->
+				<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+				<!-- <Data>
+				[2]
+				</Data>
+			</Collider>
+			<Building>
+				<NoFengshui>1</NoFengshui>
+				<FillTarrain>Mud</FillTarrain>
+				<BuildMode>Rect</BuildMode>
+				<CanMakeRoom>0</CanMakeRoom>
+				<LeaveResourcesWhenKilled>0</LeaveResourcesWhenKilled>
+				<RemovePriceFactor>0.5</RemovePriceFactor>
+				<BePackage>0</BePackage>
+				<BlockLight>0</BlockLight>
+				<RestEffectiveness>1</RestEffectiveness>
+				<IsVirtualBuilding>1</IsVirtualBuilding>
+				<BeMade>
+					<WorkToMake>5</WorkToMake>
+					<Quality>0</Quality>			
+				</BeMade>
+			</Building>
+		</ThingDef> -->
+		<ThingDef Type="Building" Name="WRJ_FillSoil" Parent="FillBase">	
+			<Color>EEEE00FF</Color>
+			<ThingName>土地改造(简化)</ThingName>
+			<Desc>将一块区域改造成[color=#EEEE00]土地[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>Soil</FillTarrain>
+				<TerrainAffordanceNeeded>All</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+
+		<ThingDef Type="Building" Name="WRJ_FillShallowWater" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>浅水改造(简化)</ThingName>
+			<Desc>将一块陆地区域改造成[color=#98F5FF]浅水[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>ShallowWater</FillTarrain>
+				<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+		
+		<ThingDef Type="Building" Name="WRJ_FillFertileSoil" Parent="FillBase">	 
+			<Color>C1FFC1FF</Color>
+			<ThingName>沃土改造(简化)</ThingName>
+			<Desc>将一块陆地区域改造成[color=#C1FFC1]沃土[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>FertileSoil</FillTarrain>
+				<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+		
+		<!-- <ThingDef Type="Building" Name="WRJ_FillShallowWater" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>浅水改造(简化)</ThingName>
+			<Desc>将一块深水区域改造成[color=#98F5FF]浅水[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>ShallowWater</FillTarrain>
+				<TerrainAffordanceNeeded>DepthWater</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef> -->
+
+		<ThingDef Type="Building" Name="WRJ_FillLingSoil" Parent="FillBase">	
+			<Color>66CD00FF</Color>
+			<ThingName>灵土改造(简化)</ThingName>
+			<Desc>将一块区域改造成[color=#66CD00]灵土[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>LingSoil</FillTarrain>
+				<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+
+		<ThingDef Type="Building" Name="WRJ_FillDepthWater" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>深水改造(简化)</ThingName>
+			<Desc>将一块浅水区域改造成[color=#98F5FF]深水[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>DepthWater</FillTarrain>
+				<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+
+		<ThingDef Type="Building" Name="WRJ_FillLingWater" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>灵水改造(简化)</ThingName>
+			<Desc>将一块浅水区域改造成[color=#98F5FF]灵水[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>LingWater</FillTarrain>
+				<TerrainAffordanceNeeded>ShallowWater</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+
+		<ThingDef Type="Building" Name="WRJ_FillYunHai" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>云海改造(简化)</ThingName>
+			<Desc>将一块可行走区域改造成[color=#98F5FF]云海[/color]，本工作耗时100。云海地形不可行走，地形改动不可逆，请慎重改造。</Desc>
+			<Building>
+				<FillTarrain>YunHai</FillTarrain>
+				<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+
+		<!-- 游戏不支持 云海类似深水，为不可建筑地形
+		<ThingDef Type="Building" Name="WRJ_FillYunHai2" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>云海改造(简化)</ThingName>
+			<Desc>将一块云海区域改造成[color=#98F5FF]浅水[/color]，本工作耗时100。</Desc>
+			<Building>
+				<FillTarrain>ShallowWater</FillTarrain>
+				<TerrainAffordanceNeeded>YunHai</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef> -->
+
+		
+	</List></ThingDefs>
