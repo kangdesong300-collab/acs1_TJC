@@ -1,0 +1,182 @@
+﻿<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	<!--学习宝典直接学会技能-->
+
+	<Esoterica Name="Custom_Esoterica_NiuBi">
+		<DisplayName>牛逼宝典</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>上古大能领悟的秘法。学成此法可将凡人肉身转化成天神之体，全面提高身体素质。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>大幅提高各种属性，小白秒变龙傲天。</EffectDesc>
+		<Modifier>Other_Esoterica_Niubi</Modifier>	
+	</Esoterica>
+	<!--学习玉函学会符图-->
+	<Esoterica Name="SpellEsoterica_Niubi">
+		<DisplayName>牛逼玉函</DisplayName>
+		<Desc>道门秘传，记载多种于修行大有益处的符箓。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Exp>500</Exp>
+		<EffectDesc>解锁 符图：\n外门符\n内门符\n神道威符\n神道隐符</EffectDesc>
+		<Spells>
+			<li>Spell_Niubi1</li>
+			<li>Spell_Niubi2</li>
+			<li>Spell_Niubi3</li>
+			<li>Spell_Niubi4</li>
+		</Spells>
+	</Esoterica>
+	<!--学习药典学会丹方-->
+	<Esoterica Name="DF_Esoterica_NiuBi">
+		<DisplayName>牛逼药典</DisplayName>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>上古大能王大仙的药典，记录了修仙界最珍贵的几种丹方。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>Dan</Type>
+		<Exp>500</Exp>
+		<EffectDesc>习得 丹方：\n大圣丹\n巨灵丹\n大灵丹\n烛龙内丹\n造化神丹\n阴阳真灵丹\n龙魂真灵丹\n凤魂真灵丹\n牛逼裂天丹</EffectDesc>
+		<Dans>
+			<li>Dan_IncreaseLife_Gai</li>
+			<li>Dan_GreateLing</li>
+			<li>Dan_GiantLing</li>
+			<li>Dan_ZhuLongNeiDan</li>
+			<li>Dan_ExtremeLofty</li>
+			<li>Dan_ZhuLongDan1</li>
+			<li>Dan_LongDan1</li>
+			<li>Dan_FengDan1</li>
+			<li>Dan_NiuBiLieTianDan</li>
+		</Dans>
+	</Esoterica>
+	<!--学习图册解锁建筑-->
+	<Esoterica Name="TC_Esoterica_NiuBi">
+		<DisplayName>牛逼图册</DisplayName>
+		<Desc>来自异界的神秘图册，记载有许多来自一个伟大国度的风俗文化。</Desc>
+		<Hide>0</Hide>
+		<Element>None</Element>
+		<Type>None</Type>
+		<Difficulty>0</Difficulty>
+		<EffectDesc>解锁 建筑：\n灯笼-万化安\n灯笼-四海同\n屋顶-迎春\n屋顶-纳福\n烟花-龙歌</EffectDesc>
+		<Buildings>
+			<li>Lantern5</li>
+			<li>Lantern6</li>
+			<li>WoodRoof_SpringFestival</li>
+			<li>StoneRoof_SpringFestival</li>
+			<li>Firecracker</li>
+		</Buildings>
+	</Esoterica>
+	<!--学习神通 飞龙探云手-->
+	<Esoterica Name="Magic_Esoterica_FLTYS">
+		<DisplayName>飞龙探云手</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：飞龙探云手\n巴蜀盗侠李寒空四处劫富济贫，创神通《飞龙探云手》。 王大仙游历天下偶遇时习得，流传于后人。此神通可脱光目标于无形，可谓居家旅行，必备良技。\n如果对行商使用的话...[/color][/size]
+		</EffectDesc>
+		<Magics>
+			<li>Magic_WRJ_FLTYS</li>
+		</Magics>
+	</Esoterica>
+	<!--学习神通 圣灵淬-->
+	<Esoterica Name="Magic_Esoterica_FBLC">
+		<DisplayName>圣灵淬</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：圣灵淬\n可以使法宝威力，灵力，回灵速度，冲撞力，冲撞抵抗，攻击间隔全方位提升。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_WRJ_FBLC</li>
+		</Magics>
+	</Esoterica>
+	<!--学习神通 大保健-->
+	<Esoterica Name="Magic_Esoterica_DBJ">
+		<DisplayName>大保健</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：大保健\n可以使一名弟子修仙资质得到全方位的提升。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_WRJ_DBJ</li>
+		</Magics>
+	</Esoterica>
+	<!--学习神通 风水凝练-->
+	<Esoterica Name="Magic_Esoterica_FSItemCreate_M">
+		<DisplayName>风水凝练</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：风水凝练\n消耗本源精血为一件物品赋予风水镇物属性。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_FSItemCreate_M</li>
+		</Magics>
+	</Esoterica>
+	<!--学习神通 造矿术-->
+	<Esoterica Name="Magic_Esoterica_BuildMine_M">
+		<DisplayName>造矿术</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：造矿术\n消耗大量灵力，将地埋深处的矿产拔出地表。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_BuildMine_M</li>
+		</Magics>
+	</Esoterica>
+	<!--学习神通 续命咒-->
+	<Esoterica Name="Magic_Esoterica_GodResurrectionA_M">
+		<DisplayName>续命咒</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：续命咒\n将一名弥留，死亡角色复活。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_GodResurrectionA_M</li>
+		</Magics>
+	</Esoterica>
+	<!--学习神通 群体返生-->
+	<Esoterica Name="Magic_Esoterica_GodResurrectionB_M">
+		<DisplayName>群体返生</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<GLevel>Qi</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得神通：群体返生\n将场景中所有我方的弥留、死亡角色全部复活。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_GodResurrectionB_M</li>
+		</Magics>
+	</Esoterica>
+</List></Esotericas>

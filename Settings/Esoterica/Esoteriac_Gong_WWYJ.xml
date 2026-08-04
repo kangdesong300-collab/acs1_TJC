@@ -1,0 +1,164 @@
+<Esotericas><List>
+	<!--<Esoterica Name="DanFang_TongYong">
+		<DisplayName>真丹要略</DisplayName>
+		<Desc>记录修行界常见丹药炼制方法的著作。</Desc>
+		<Element>Jin</Element>
+		<Exp>123</Exp>
+		<EffectDesc>各种强大的功能</EffectDesc>
+		<Skills>
+			<li>TSkillSkill</li>
+		</Skills>
+		<Dans>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+			<li>Dan_IncreaseLife4</li>
+		</Dans>
+		<Places>
+			<li>Place_KunLun1</li>
+		</Places>
+		<Secrets>
+			<li>4</li>
+		</Secrets>
+		<Flags></Flags>
+		<Modifier>Dissatisfaction</Modifier>	
+	</Esoterica> -->
+	
+	<!--青山剑典万物一-->
+	<Esoterica Name="GongWWYJ_Esoterica_NiuBi">
+		<DisplayName>牛逼化形</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典炼神秘法，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<GodSoulCount>9</GodSoulCount>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_NiuBi">
+		<DisplayName>牛逼化形</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典炼神秘法，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>Dissatisfaction</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_1">
+		<DisplayName>承天剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典承天剑诀，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_1</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_1">
+		<DisplayName>承天剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典承天剑诀，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_1</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_1">
+		<DisplayName>承天剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典承天剑诀，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_1</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_1">
+		<DisplayName>承天剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典承天剑诀，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_1</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_1">
+		<DisplayName>承天剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典承天剑诀，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_1</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_1">
+		<DisplayName>承天剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典承天剑诀，早已失传。修炼此术可使元神分化，产生九条分神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_1</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_7">
+		<DisplayName>七梅剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典七梅剑诀，青山宗第九峰绝学，早已失传。配合王大仙秘宝如岁剑效果最佳。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_7</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_8">
+		<DisplayName>八方剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典八方剑诀，青山宗第九峰绝学，早已失传。配合王大仙秘宝潮来剑效果最佳。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_8</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="GongWWYJ_Esoterica_9">
+		<DisplayName>九死剑诀</DisplayName>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>青山剑典九死剑诀，青山宗第九峰绝学，早已失传。配合王大仙秘宝弗思剑效果最佳。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加九条元神分神,可牛逼了！[/color][/size]</EffectDesc>
+		<Modifier>GongWWYJ_Esoterica_9</Modifier>
+	</Esoterica>
+
+	
+
+</List></Esotericas>
