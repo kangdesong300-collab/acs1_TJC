@@ -1,0 +1,10 @@
+<MoodDefs><List>
+	<Mood Name="AfterFLTYS">
+		<DisplayName>光溜溜</DisplayName>
+		<Desc>感觉自己的肩上的重担一扫而空，轻松的感觉令自己心情愉快。</Desc>
+		<StoryDesc>因为装备莫名消失而觉得轻松愉悦</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<Value>200</Value>
+		<Duration>0</Duration>
+	</Mood>
+</List></MoodDefs>
