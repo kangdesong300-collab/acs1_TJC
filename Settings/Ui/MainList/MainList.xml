@@ -1,0 +1,23 @@
+<MainList><List>
+	
+	<Data Kind="Builds" Type="门派" Unlock="1"  CMDType="Build" Name="DiePlace"/>             		<!--停尸点--> 	
+
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillSoil"/>  				<!--改平地--> 
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillShallowWater"/>  		<!--改浅水--> 
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillFertileSoil"/>  		<!--普通改沃土--> 
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillLingSoil"/>  			<!--普通改灵土--> 
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillDepthWater"/> 			<!--深水改浅水--> 
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillLingWater"/> 			<!--浅水改灵水--> 
+	<Data Kind="Builds" Type="区域" Unlock="1"  CMDType="Build" Name="WRJ_FillYunHai"/> 				<!--浅水改云海-->
+	
+
+	<Data Kind="Builds" Type="神秘" Unlock="1"  CMDType="Build" Name="WRJ_Taobao"/> 					<!--淘宝商城--> 
+
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Gu1"/>          <!--云龙鼓-->	
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_ShiBei1"/>  	<!--霸下碑-->	
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="风物"  CMDType="Build" Name="Building_Tower1"/>   	<!--鎏金塔-->
+	<Data Kind="Builds" Unlock="4" Type="门派"  CMDType="Build" Name="Building_Zhong1" />   					<!--磐龙钟-->	
+	<Data Kind="Builds" Unlock="1" Type="装饰"  Label="灯饰"  CMDType="Build" Name="Lantern2"/>      		<!--灯笼-照影--> 
+	<Data Kind="Builds" Unlock="5" Type="装饰"  Label="景观"  CMDType="Build" Name="Building_PenZai3"/> 		<!--盆栽-迎仙-->	
+	
+</List></MainList>
