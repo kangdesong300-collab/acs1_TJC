@@ -1,0 +1,564 @@
+﻿<SkillTree><List>
+
+
+	<Node Name="GongWWYJ_a2" Gong="Gong_WWYJ_None">
+		<Level>Qi</Level>
+		<Index>2</Index>
+		<Line>0,1,1,0,1,0,2,0</Line>	
+	</Node>
+		
+	<Node Name="GongWWYJ_a3" Gong="Gong_WWYJ_None">
+		<Esoterica>Custom_Esoterica_NiuBi</Esoterica>
+		<DisplayName>牛逼宝典</DisplayName>
+		<Level>Qi</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,1,2,1</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_a4" Gong="Gong_WWYJ_None">
+		<Level>Qi</Level>
+		<Index>4</Index>
+		<Line>0,0,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_a8" Gong="Gong_WWYJ_None">
+		<Level>Qi</Level>
+		<Index>8</Index>
+		<Line>0,1,1,0,1,0,2,0</Line>	
+	</Node>
+	
+	<Node Name="GongWWYJ_a9" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_1</Esoterica>
+		<DisplayName>真·先天罡气</DisplayName>
+		<Level>Qi</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,1,1,2,1</Line>
+		<PreUnit>
+		
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_a10" Gong="Gong_WWYJ_None">
+		<Level>Qi</Level>
+		<Index>10</Index>
+		<Line>0,0,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_b1" Gong="Gong_WWYJ_None">
+		<Level>Dan1</Level>
+		<Index>1</Index>
+		<Line>0,1,1,0,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_b2" Gong="Gong_WWYJ_None">
+		<Esoterica>DanFang_Esoterica_NiuBi</Esoterica>
+		<DisplayName>牛逼药典</DisplayName>
+		<Level>Dan1</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_a3</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	<Node Name="GongWWYJ_b3" Gong="Gong_WWYJ_None">
+		<Esoterica>GongWWYJ_Esoterica_NiuBi</Esoterica>
+		<DisplayName>牛逼化形</DisplayName>
+		<Level>Dan1</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_a3</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	<Node Name="GongWWYJ_b4" Gong="Gong_WWYJ_None">
+		<Esoterica>SpellEsoterica_Niubi</Esoterica>
+		<DisplayName>牛逼玉涵</DisplayName>
+		<Level>Dan1</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_a3</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_b5" Gong="Gong_WWYJ_None">
+		<Level>Dan1</Level>
+		<Index>5</Index>
+		<Line>0,0,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_b7" Gong="Gong_WWYJ_None">
+		<Level>Dan1</Level>
+		<Index>7</Index>
+		<Line>0,1,1,0,1,0,2,0</Line>	
+	</Node>
+	
+	<Node Name="GongWWYJ_b8" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_2</Esoterica>
+		<DisplayName>真·纯质阳炎</DisplayName>
+		<Level>Dan1</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_a9</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	<Node Name="GongWWYJ_b9" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_3</Esoterica>
+		<DisplayName>真·庚金神雷</DisplayName>
+		<Level>Dan1</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,1,0,2,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_a9</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	<Node Name="GongWWYJ_b10" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_4</Esoterica>
+		<DisplayName>真·灭绝神光</DisplayName>
+		<Level>Dan1</Level>
+		<Index>10</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_a9</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	<Node Name="GongWWYJ_b11" Gong="Gong_WWYJ_None">
+		<Level>Dan1</Level>
+		<Index>11</Index>
+		<Line>0,0,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_c0" Gong="Gong_WWYJ_None">
+		<Level>Dan2</Level>
+		<Index>0</Index>
+		<Line>0,1,1,0,1,0,2,0</Line>	
+	</Node>
+	
+	<Node Name="GongWWYJ_c1" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_AbsorbLing_Aoe_1</Esoterica>
+		<DisplayName>雪流剑诀</DisplayName>
+		<Level>Dan2</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>GongWWYJ_b2</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="GongWWYJ_c2" Gong="Gong_WWYJ_None">
+		<Level>Dan2</Level>
+		<Index>2</Index>
+		<Line>0,1,1,0,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_c3" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_RebornSelf</Esoterica>
+		<DisplayName>苍鸟剑诀</DisplayName>
+		<Level>Dan2</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_b3</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_c4" Gong="Gong_WWYJ_None">
+		<Level>Dan2</Level>
+		<Index>4</Index>
+		<Line>0,0,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_c5" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_RebornSelf</Esoterica>
+		<DisplayName>无端剑诀</DisplayName>
+		<Level>Dan2</Level>
+		<Index>5</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_b4</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_c6" Gong="Gong_WWYJ_None">
+		<Level>Dan2</Level>
+		<Index>6</Index>
+		<Line>0,0,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_c7" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_5</Esoterica>
+		<DisplayName>真·北极剑煞</DisplayName>
+		<Level>Dan2</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_b8</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_c8" Gong="Gong_WWYJ_None">
+		<Level>Dan2</Level>
+		<Index>8</Index>
+		<Line>0,1,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_c9" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_6</Esoterica>
+		<DisplayName>真·虚空之泪</DisplayName>
+		<Level>Dan2</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_b9</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_c10" Gong="Gong_WWYJ_None">
+		<Level>Dan2</Level>
+		<Index>10</Index>
+		<Line>0,1,1,1,1,0,2,0</Line>	
+	</Node>
+
+	<Node Name="GongWWYJ_c11" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_7</Esoterica>
+		<DisplayName>真·逆转轮回</DisplayName>
+		<Level>Dan2</Level>
+		<Index>11</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_b10</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_d0" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_PrayForFohn</Esoterica>
+		<DisplayName>六龙剑法</DisplayName>
+		<Level>God</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<Layers>
+			<li>GongWWYJ_d0_1</li>
+			<li>GongWWYJ_d0_2</li>
+		</Layers>
+		<PreUnit>
+			<li>GongWWYJ_c1</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_d0_1" Gong="Gong_WWYJ_None">
+		<Esoterica>Gong9_LvUpEsoterica_3</Esoterica>
+		<DisplayName>五内蕴火</DisplayName>
+		<Level>None</Level>
+	</Node>
+
+	<Node Name="GongWWYJ_d0_2" Gong="Gong_WWYJ_None">
+		<Esoterica>Gong9_LvUpEsoterica_4</Esoterica>
+		<DisplayName>五内蕴火</DisplayName>
+		<Level>None</Level>
+	</Node>
+	
+
+	
+	<Node Name="GongWWYJ_d2" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_RebornSelf</Esoterica>
+		<DisplayName>七梅剑诀</DisplayName>
+		<Level>God</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_c3</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+
+	<Node Name="GongWWYJ_d4" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_RebornSelf</Esoterica>
+		<DisplayName>八方剑诀</DisplayName>
+		<Level>God</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_c3</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_d6" Gong="Gong_WWYJ_None">
+		<Esoterica>Magic_RebornSelf</Esoterica>
+		<DisplayName>九死剑诀</DisplayName>
+		<Level>God</Level>
+		<Index>6</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_c5</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	<Node Name="GongWWYJ_d8" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_8</Esoterica>
+		<DisplayName>真·焚日真法</DisplayName>
+		<Level>God</Level>
+		<Index>8</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_c7</li>
+			<li>GongWWYJ_c9</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+
+	<Node Name="GongWWYJ_d10" Gong="Gong_WWYJ_None">
+		<Esoterica>FightSkill_WWYJ_Esoterica_9</Esoterica>
+		<DisplayName>真·太虚神盾</DisplayName>
+		<Level>God</Level>
+		<Index>10</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>	
+		<PreUnit>
+			<li>GongWWYJ_c9</li>
+			<li>GongWWYJ_c11</li>
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+
+	
+	<Node Name="GongWWYJ_e3" Gong="Gong_WWYJ_None">
+		<Esoterica>God2_Dan</Esoterica>
+		<DisplayName>天道神丹</DisplayName>
+		<Level>God2</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Medicine" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+	
+	<Node Name="GongWWYJ_e9" Gong="Gong_WWYJ_None">
+		<Esoterica>God2_Fabao</Esoterica>
+		<DisplayName>天道神器</DisplayName>
+		<Level>God2</Level>
+		<Index>9</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		
+		</PreUnit>
+		<MutexUnit>
+		
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+			<li Name="Manual" Level="20"/>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+	</Node>
+</List></SkillTree> 
