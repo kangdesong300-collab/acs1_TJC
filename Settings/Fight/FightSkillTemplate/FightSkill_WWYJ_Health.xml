@@ -1,0 +1,20 @@
+<FightSkills><List>
+	
+	<Skill Name="HealthSkill_WWYJ_1"><!--恢复技能基础模板 --> 
+		<DisplayName>真·逆转轮回</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>180</CD>
+		<LingCost>200</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>LowLing</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+</List></FightSkills>

@@ -1,0 +1,21 @@
+<FightSkills><List>
+	
+	<Skill Name="SkillSkill_WWYJ_1"><!--术法增强基础模板 --> 
+		<DisplayName>真·焚日真法</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Skill</Kind><!--技能类型，Skill=术法类-->
+		<ShowInUI>1</ShowInUI><!--显示UI-->
+		<SingTime>0.5</SingTime><!--吟唱时间-->
+		<CD>90</CD><!--技能CD-->
+		<LingCost>400</LingCost><!--灵力消耗-->
+		<SingAni>assemble</SingAni><!--吟唱动画-->
+		<CastAni>LJjineng9</CastAni><!--释放动画-->
+		<Value>5</Value><!--技能伤害-->
+		<Value2>10</Value2><!--持续时间-->
+		<TargetCamp>Friendly</TargetCamp><!--目标阵营-->
+		
+		<Shape>Single</Shape><!--技能形状-->
+		<SelectType>Self</SelectType><!--选择目标-->
+		<HitEffect>71</HitEffect><!--技能效果-->
+	</Skill>
+</List></FightSkills>
