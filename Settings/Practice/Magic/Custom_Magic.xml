@@ -1,0 +1,142 @@
+<Magics><List>
+
+	<Magic Name="Magic_WRJ_FLTYS" Type="Class">
+		<DisplayName>飞龙探云手</DisplayName>
+		<Desc>王大仙在游历天下时从李寒空处习得的绝学，能神不知鬼不觉的扒光目标的所有装备。\n如果对行商使用的话...\n可谓居家旅行，必备良技。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<!--施展动画-->
+		<Ani>dazuo</Ani>
+		<!--神通的情感类型 None中性 Good好事 Bad坏事 VeryBad非常坏-->
+		<Kind>Good</Kind>
+		<!--灵气消耗-->
+		<CostLing>100</CostLing>
+		<!--消耗寿命-->
+		<CostAge>0</CostAge>		
+		<!--天谴-->
+		<Penalty>0</Penalty>		
+		<!--门派善名-->
+		<ScoreGood>10</ScoreGood>
+		<!--自定义数值参数 支持1到5-->
+		<Param1>5</Param1>	
+		<!--神通的释放模式 None直接释放 Single单体目标 Line划线 Straight划线(不能斜) Rect区域 Ellipse椭圆-->
+		<SelectMode>Single</SelectMode>
+		<!--如果对NPC释放，NPC的反应动画-->
+		<TargetAni>dazuo</TargetAni>		
+		<SelectTarget>Npc</SelectTarget>
+		<!--对应的Lua对象名字 参考Example_Magic-->
+		<ClassName>Magic_FLTYS</ClassName>
+		<!--在门派显示技能-->
+		<ShowInPAttacker>1</ShowInPAttacker>
+		<!--使用神通时的UI提示-->
+		<TargetDesc>请选择一个活着的倒霉蛋</TargetDesc>
+	</Magic>
+
+
+	<Magic Name="Magic_WRJ_FBLC" Type="Class">
+		<DisplayName>圣灵淬</DisplayName>
+		<Desc>王大仙在游历天下时悟得的绝学，能将法宝全方位的强化。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<!--施展动画-->
+		<Ani>dazuo</Ani>
+		<!--神通的情感类型 None中性 Good好事 Bad坏事 VeryBad非常坏-->
+		<Kind>Good</Kind>
+		<!--灵气消耗-->
+		<CostLing>100</CostLing>
+		<!--消耗寿命-->
+		<CostAge>0</CostAge>		
+		<!--天谴-->
+		<Penalty>0</Penalty>		
+		<!--门派善名-->
+		<ScoreGood>10</ScoreGood>
+		<!--自定义数值参数 支持1到5-->
+		<Param1>5</Param1>	
+		<!--神通的释放模式 None直接释放 Single单体目标 Line划线 Straight划线(不能斜) Rect区域 Ellipse椭圆-->
+		<SelectMode>Single</SelectMode>
+		<!--如果对NPC释放，NPC的反应动画-->
+		<TargetAni>dazuo</TargetAni>		
+		<SelectTarget>Item</SelectTarget>
+		<!--对应的Lua对象名字 参考Example_Magic-->
+		<ClassName>Magic_FBLC</ClassName>
+		<!--使用神通时的UI提示-->
+		<TargetDesc>请选择一件法宝</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_WRJ_DBJ" Type="Class">
+		<DisplayName>大保健</DisplayName>
+		<Desc>王大仙在游历天下时悟得的绝学，能全方位提升修仙的资质。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<!--施展动画-->
+		<Ani>dazuo</Ani>
+		<!--神通的情感类型 None中性 Good好事 Bad坏事 VeryBad非常坏-->
+		<Kind>Good</Kind>
+		<!--灵气消耗-->
+		<CostLing>100</CostLing>
+		<!--消耗寿命-->
+		<CostAge>0</CostAge>		
+		<!--天谴-->
+		<Penalty>0</Penalty>		
+		<!--门派善名-->
+		<ScoreGood>10</ScoreGood>
+		<!--自定义数值参数 支持1到5-->
+		<Param1>5</Param1>	
+		<!--神通的释放模式 None直接释放 Single单体目标 Line划线 Straight划线(不能斜) Rect区域 Ellipse椭圆-->
+		<SelectMode>Single</SelectMode>
+		<!--如果对NPC释放，NPC的反应动画-->
+		<TargetAni>dazuo</TargetAni>		
+		<SelectTarget>Npc</SelectTarget>
+		<!--对应的Lua对象名字 参考Example_Magic-->
+		<ClassName>Magic_DBJ</ClassName>
+		<!--使用神通时的UI提示-->
+		<TargetDesc>请选择一名弟子</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_FSItemCreate_M" Type="Class">
+		<DisplayName>风水凝练</DisplayName>
+		<Desc>消耗本源精血为一件物品赋予随机风水镇物属性并使其直接显现。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>10</Param1><!-- 读条时间 -->
+		<SelectTarget>InLight|Item</SelectTarget>
+		<ClassName>Magic_FSItemCreate_M</ClassName>
+		<TargetDesc>请选择一个非风水镇物道具</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+
+	<Magic Name="Magic_BuildMine_M" Type="Class">
+		<DisplayName>造矿术</DisplayName>
+		<Desc>消耗大量灵力，将地埋深处的矿产拔出地表，稀有矿物概率增加。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<SelectTarget>NoBuilding|InLight|Walkable</SelectTarget>
+		<ClassName>Magic_BuildMine_M</ClassName>
+		<TargetDesc>请选择一块空地</TargetDesc>
+		<CostLing>10000</CostLing>
+	</Magic>
+
+	<Magic Name="Magic_GodResurrectionA_M" Type="Class">
+		<DisplayName>续命咒</DisplayName>
+		<Desc>将一名弥留，死亡角色复活(敌人也有效)。消耗百万灵力。</Desc>
+		<Icon>res\Sprs\ui\icon_tongxiu01</Icon>
+		<TargetDesc>请选择已死亡或弥留的角色</TargetDesc>
+		<Param1>10</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodResurrectionA_M</ClassName>
+		<CostLing>1000000</CostLing>
+	</Magic>
+		
+	<Magic Name="Magic_GodResurrectionB_M" Type="Class">
+		<DisplayName>群体返生</DisplayName>
+		<Desc>将场景中所有我方的弥留、死亡角色全部复活。消耗千万灵力。</Desc>
+		<Icon>res\Sprs\ui\icon_tongxiu01</Icon>
+		<Param1>60</Param1><!--消耗时间-->
+		<SelectMode>None</SelectMode>
+		<Ani>LJjineng10</Ani>
+		<ClassName>Magic_GodResurrectionB_M</ClassName>
+		<CostLing>10000000</CostLing>
+	</Magic>
+
+</List></Magics>
