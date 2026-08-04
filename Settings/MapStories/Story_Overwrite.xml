@@ -1,0 +1,53 @@
+<Stories><List>	
+<!--重写游戏原本事件-->
+
+	<!--搜魂必出功法-->
+	<Story Name="Story_SoulSeach">
+		<DisplayName>搜魂</DisplayName>
+		<Desc>[NAME]对这个弥留的修行者施展了搜魂大法，试图获得一些有用的信息。</Desc>
+		<Kind>None</Kind>
+		<GlobleOKResult><![CDATA[	
+			local tnpc = story:GetBindNpc();
+			local rs = false;
+			local nK = 1 
+			if tnpc ~= nil then
+				if me:GetRoomFengshui() == 4 then
+					nK = 1.2
+				elseif me:GetRoomFengshui() == 5 then
+					nK = 1.5
+				elseif me:GetRoomFengshui() == 6 then
+					nK = 2
+				end
+				if tnpc.npcObj.bDaNeng == true then
+					if rs == false then
+						--获得秘籍
+						for i = 1, world:RandomInt(2,6) do
+							me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+						end
+						rs = true;
+					end
+				elseif (tnpc.npcObj.IsEliteEnemy) then
+					rs = false
+				else
+					if rs == false then
+						--获得功法
+						local gname = tnpc:GetGongName();
+						if gname ~= nil then
+							me:UnLockGong(gname);
+							rs = true;
+						end
+					end
+					if world:CheckRate(0.5) then
+						--获得秘闻
+						me:AddSecret(me:RandomInt(1, 23));
+						rs = true;
+					end
+				end
+			end
+			if rs == false then
+				me:AddMsg(XT("一无所获"));
+			end
+		]]>
+		</GlobleOKResult> <!--全局的成功结果，当选项没有配置成功结果时调用这个-->
+	</Story>
+</List></Stories>

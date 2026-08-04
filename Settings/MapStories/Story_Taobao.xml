@@ -1,0 +1,429 @@
+﻿<Stories>
+  <List>
+    <!--Parent="BaseFillingStory"-->
+    <Story Name="Story_Taobao" >
+      <DisplayName>淘宝</DisplayName>
+      <Desc>[NAME]忍不住手痒，打开了淘宝。</Desc>
+      <!--<Kind>None</Kind>-->
+      <Selections>
+        <li>
+          <Display>聚贤大会</Display>
+          <Tip>广收门徒</Tip>
+          <OKResult>
+            <![CDATA[
+                me:TriggerStory("Story_GuangShouMenTu");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>缩影之卷</Display>
+          <Tip>召唤boss</Tip>
+          <OKResult>
+            <![CDATA[
+                me:TriggerStory("Story_Item_SuoYingZhiJuan");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>获得秘体</Display>
+          <Tip>获得特殊秘体</Tip>
+          <OKResult>
+            <![CDATA[
+                me:DropSuperPartItem("SuperPart_Gong_1_7");
+                me:DropSuperPartItem("SuperPart_Gong_2_6");
+                me:DropSuperPartItem("SuperPart_DDFT_HSST");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>太虚幻境</Display>
+          <Tip>更换天气</Tip>
+          <OKResult>
+            <![CDATA[
+                me:TriggerStory("Story_ChangeWeather");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>梦回游仙</Display>
+          <Tip>更换背景音乐</Tip>
+          <OKResult>
+            <![CDATA[
+                me:TriggerStory("Story_ChangeBGM");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>解锁功法</Display>
+          <Tip>解锁各种功法</Tip>
+          <OKResult>
+            <![CDATA[
+                me:TriggerStory("Story_UnlockGongWWYJ");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>获得秘籍</Display>
+          <Tip>获得特殊秘籍</Tip>
+          <OKResult>
+            <![CDATA[
+                me:DropEsoteric("Custom_Esoterica_NiuBi");
+                me:DropEsoteric("SpellEsoterica_Niubi");
+                me:DropEsoteric("DF_Esoterica_NiuBi");
+                me:DropEsoteric("TC_Esoterica_NiuBi");
+                me:DropEsoteric("Magic_Esoterica_FLTYS");
+                me:DropEsoteric("Magic_Esoterica_FBLC");
+                me:DropEsoteric("Magic_Esoterica_DBJ");
+                me:DropEsoteric("Magic_Esoterica_FSItemCreate_M");
+                me:DropEsoteric("Magic_Esoterica_BuildMine_M");
+                me:DropEsoteric("Magic_Esoterica_GodResurrectionA_M");
+                me:DropEsoteric("Magic_Esoterica_GodResurrectionB_M");
+            ]]>
+          </OKResult>
+        </li>
+        <li>
+          <Display>什么都不做</Display>
+          <OKResult>
+            <![CDATA[
+                me:AddMsg("[NAME]突然不想剁手了！");
+            ]]>
+          </OKResult>
+        </li>
+      </Selections>
+    </Story>
+
+    <Story Name="Story_ChangeWeather">
+    <DisplayName>太虚幻境</DisplayName>
+    <Desc>需要将天气改变成什么呢。</Desc>
+    <Kind>None</Kind>   
+    <Selections>
+      <li>
+        <Display>晴天</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay")</OKResult>
+      </li>
+      <li>
+        <Display>小雨/雪</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")</OKResult>
+      </li>         
+      <li>
+        <Display>尘暴</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")</OKResult>
+      </li>
+      <li>
+        <Display>永夜</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("PermanentNight")</OKResult>
+      </li>
+      <li>
+        <Display>雷暴</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightningStorm")</OKResult>
+      </li>
+      <li>
+        <Display>焚风</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("FohnNoFeng")</OKResult>
+      </li>
+      <li>
+        <Display>瘴气</Display>
+        <OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("Miasma")</OKResult>
+      </li>
+      <li>
+        <Display>灵气澎湃</Display>
+        <OKResult>world:BeginWeather("LingUpWave_Big",true);</OKResult>
+      </li>
+      <li>
+        <Display>清除所有天气</Display>
+        <OKResult>World.Weather:ClearAllWeather();</OKResult>
+      </li>
+      <li>
+        <Display>算了</Display>
+      </li>
+    </Selections>
+  </Story>
+
+  <Story Name="Story_ChangeBGM">
+    <DisplayName>回梦游仙</DisplayName>
+    <Desc>需要将背景音乐改变成什么呢?</Desc>
+    <Kind>None</Kind>   
+    <Selections>
+      <li>
+        <Display>回梦游仙</Display>
+        <OKResult><![CDATA[world:PlayBGM("Ogg/BGM/P01-1-menghuiyouxian.ogg",true);]]></OKResult>
+      </li>
+      <li>
+        <Display>清平乐</Display>
+        <OKResult><![CDATA[world:PlayBGM("Ogg/BGM/P02-qingpingle.ogg",true);]]></OKResult>
+      </li>
+      <li>
+        <Display>凤歌青天</Display>
+        <OKResult><![CDATA[world:PlayBGM("Ogg/BGM/P23-fenggeqingtian.ogg",true);]]></OKResult>
+      </li>
+      <li>
+        <Display>玉水明沙</Display>
+        <OKResult><![CDATA[world:PlayBGM("Ogg/BGM/P24-yushuimingsha.ogg",true);]]></OKResult>
+      </li>
+      <li>
+        <Display>织梦行云</Display>
+        <OKResult><![CDATA[world:PlayBGM("Ogg/BGM/P25-zhimengxingyun.ogg",true);]]></OKResult>
+      </li>
+      <li>
+        <Display>沧浪剑赋</Display>
+        <OKResult><![CDATA[world:PlayBGM("Ogg/BGM/P26-canglangjianfu.ogg",true);]]></OKResult>
+      </li>
+      <li>
+        <Display>算了</Display>
+      </li>
+    </Selections>
+  </Story>
+
+  <Story Name="Story_UnlockGongWWYJ">
+    <DisplayName>解锁功法</DisplayName>
+    <Desc>请选择要解锁的功法，若已解锁，可获得随机功法。</Desc>
+    <Kind>None</Kind>
+    <Selections>
+      <li>
+        <Display>己寅九冲多宝真解</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_2_Mu") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得上清灵宝天尊嫡传功法传承。"));
+            me:UnLockGong("Gong_2_Mu");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>七杀剑诀</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_3_Jin") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得从魔界流出的专修剑术之修行秘法功法传承。"));
+            me:UnLockGong("Gong_3_Jin");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>玉清仙法</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_4_None") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得元始天尊留在人间的道统功法传承。"));
+            me:UnLockGong("Gong_4_None");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>偷天诀</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_5_Tu") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得千年前绝地天通功法传承。"));
+            me:UnLockGong("Gong_5_Tu");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>九转金丹直指</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_6_Huo") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得老君嫡传真法，道门外丹术之无上宝典功法传承。"));
+            me:UnLockGong("Gong_6_Huo");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>太上忘情道</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_7_Huo") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得极天宫所传秘法功法传承。"));
+            me:UnLockGong("Gong_7_Huo");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>太元五符云箓</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Gong_12_None") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得金仙云中子道统功法传承。"));
+            me:UnLockGong("Gong_12_None");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>下一页</Display>
+        <OKResult>
+          <![CDATA[
+          me:TriggerStory("Story_UnlockGongWWYJ2");
+          ]]>
+        </OKResult>
+      </li>
+    </Selections>
+  </Story>
+
+  <Story Name="Story_UnlockGongWWYJ2">
+    <DisplayName>解锁功法</DisplayName>
+    <Desc>请选择要解锁的功法，若已解锁，可获得随机功法。</Desc>
+    <Kind>None</Kind>
+    <Selections>
+      <li>
+        <Display>九天应元雷声普化玉书</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("God_Gong_1") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得上古时期便已断绝的神道修行之术功法传承。"));
+            me:UnLockGong("God_Gong_1");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>诸天八部成就法</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("God_Gong_2") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得上古时期便已断绝的神道修行之术功法传承。"));
+            me:UnLockGong("God_Gong_2");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>幽冥十方太乙救苦经</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("God_Gong_3") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得上古时期便已断绝的神道修行之术功法传承。"));
+            me:UnLockGong("God_Gong_3");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>太古形意六合真体</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Body_Gong_1") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得来自太古的炼体之法传承。"));
+            me:UnLockGong("Body_Gong_1");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>蛮极金身</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Body_Gong_2") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得来自太古的炼体之法传承。"));
+            me:UnLockGong("Body_Gong_2");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>妖祖圣体</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Body_Gong_3") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得来自太古的炼体之法传承。"));
+            me:UnLockGong("Body_Gong_3");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>败灭邪体</Display>
+        <OKResult><![CDATA[
+          if world:IsGongUnLocked("Body_Gong_5") == false then
+            me:AddMsg(XT("[NAME]勇于剁手，瞬间一道七彩光华直冲云霄，获得来自太古的炼体之法传承。"));
+            me:UnLockGong("Body_Gong_5");   
+          else
+            me:AddMsg(XT("[NAME]勇于剁手，获得一门随机神通。"));
+            me:DropEsotericCustomize(XT("上古秘术-"), world:RandomInt(0,6), 0, world:RandomFloat(0.75,1.5), 9, 4, XT("巨量的"));
+          end
+        ]]></OKResult>
+      </li>
+      <li>
+        <Display>上一页</Display>
+        <OKResult>
+          <![CDATA[
+          me:TriggerStory("Story_UnlockGongWWYJ");
+          ]]>
+        </OKResult>
+      </li>
+    </Selections>
+  </Story>
+
+  <Story Name="Story_GuangShouMenTu"  Parent="BaseFillingStory">
+    <DisplayName>聚贤大会</DisplayName>
+    <Desc>[NAME]主持的聚贤大会，各大派齐聚，招收有资质的弟子。一时间天下有志求仙问道之英才汇聚于此。[NAME]奉门派之命来挑选优质人才。</Desc>
+    <Selections>
+      <li>
+        <Display>招收弟子</Display> 
+        <Tip>门派声望/修为/魅力/处世</Tip>
+        <OKResult>
+        <![CDATA[ 
+          local nG = me:GetGLevel() * 0.1 + 0.3
+          local nC = me:GetCharisma() * 0.12 + 0.3
+          local nS = me:GetSkillLevel("SocialContact") * 0.07 + 0.3
+          local nN = 0
+          nN = 5 + math.floor(10 * nG * nC * nS)
+          nN = math.min(nN,20)
+          me:AddMsg(string.format(XT("[NAME]亮出了自己门派的名号，全城沸腾了。无数求仙者蜂拥而至，[NAME]依靠神通才筛选出了%s名有缘人前往宗门进一步审核。"), tostring(nN)));
+          me:AddJoiners(nN,20,0,10,10,10,10,10,"RANDOM");
+        ]]>
+        </OKResult>
+      </li>
+      <li>
+        <Display>选择离开</Display> 
+        <OKResult>me:AddMsg(XT("[NAME]离开了聚贤大会。"));</OKResult>
+      </li>
+    </Selections>
+  </Story>
+
+
+  <Story Name="Story_ZhuLongXuYuan">
+    <DisplayName>许愿</DisplayName>
+    <Desc>受异界天道的影响，本方世界天道也发生了一些临时性的改变。甚至阴阳之道的化身烛龙都变得不再狂躁，且对来自异界的一种叫硬币的金属圆片十分感兴趣。你为烛龙带来了此物，获得了一次许愿机会。</Desc>
+    <Kind>None</Kind>
+    <Selections>
+      <li>
+        <Display>希望得到一场富贵</Display>
+        <OKResult>me:TriggerStory("Story_ZhuLongXuYuan_1");</OKResult>
+      </li>
+      <li>
+        <Display>希望得到灵丹妙药</Display>
+        <OKResult>me:TriggerStory("Story_ZhuLongXuYuan_2");</OKResult>
+      </li>
+      <li>
+        <Display>希望得到仙甲灵裳</Display>
+        <OKResult>me:TriggerStory("Story_ZhuLongXuYuan_3");</OKResult>
+      </li>
+      <li>
+        <Display>不要了，我孝敬天道不求回报！</Display>
+        <OKResult>me:AddMsg(XT("[NAME]表示自己孝敬天道，不求回报，不需要许什么愿望！然后洒然离去！"));</OKResult>
+      </li>
+    </Selections>
+  </Story>
+  </List>
+</Stories>
