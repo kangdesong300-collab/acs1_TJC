@@ -1,0 +1,60 @@
+<!--丹炉丹方：需求等级、成功率、产量数量-->
+<DanFormulas><List>
+	<!--大圣丹-->
+	<Dan Name="Dan_IncreaseLife_Gai">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_IncreaseLife_Gai</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--巨灵丹-->
+	<Dan Name="Dan_GreateLing">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_GreateLing</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--大灵丹-->
+	<Dan Name="Dan_GiantLing">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_GiantLing</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--烛龙内丹-->
+	<Dan Name="Dan_ZhuLongNeiDan">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_ZhuLongNeiDan</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--牛逼裂天丹-->
+	<Dan Name="Dan_NiuBiLieTianDan">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_NiuBiLieTianDan</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--心斋丸-->
+	<Dan Name="Dan_Xinzhai_Wan">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_XinzhaiWan</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--淬体神丹-->
+	<Dan Name="Dan_CuiTiShen_Dan">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_CuiTiShenDan</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-0.2</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+</List></DanFormulas>
