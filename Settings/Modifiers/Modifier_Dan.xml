@@ -1,0 +1,120 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Dan_Giant_Ling" Type="Normal">
+		<DisplayName>巨灵丹</DisplayName>
+		<Desc>利用巨灵丹修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<sync>1</sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="5"/>
+			<li Name="LingAbsorbSpeed" AddP="100"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Dan_Greate_Ling" Type="Normal">
+		<DisplayName>大灵丹</DisplayName>
+		<Desc>利用大灵丹修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<sync>1</sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="3"/>
+			<li Name="LingAbsorbSpeed" AddP="100"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Dan_FabaoNumAdd5" Type="Normal">
+		<DisplayName>法宝数加5</DisplayName>
+		<Desc>最大法宝数加五</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,1,1,1</BaseFive><!-- 五围各+1-->
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="5"/>
+		</Properties>
+	</Modifier> 
+
+	<!--心斋丸-->
+	<Modifier Name="Dan_XinzhaiWan" Type="Normal">
+		<DisplayName>心斋丸</DisplayName>
+		<Desc>通过心斋丸，暂时降低心情的影响，在心斋丸药效过程中，心境不会改变。</Desc>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<MaxStack>100</MaxStack>
+		<Duration>6000</Duration>
+		<Properties>
+			<li Name="EmotionAmplificationFactor" BAddP="-1"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_MINDHOLD</li>
+			<li>FLAG_LOCKMINDSTATE</li>
+		</SpecialFlags>
+	</Modifier> 
+
+	<!--体修.淬体神丹-->
+	<Modifier Name="Dan_CuiTiShenDan" Type="Normal">
+		<DisplayName>神躯</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>
+			<!--基础闪避-->
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.04"/>
+			<!--疼痛忍耐-->
+			<li Name="PainTolerance" AddV="1"/>
+			<!--基础情绪-->
+			<li Name="BaseEmotionAddV" AddV="10"/>
+			<!--身体强大系数-->
+			<li Name="BodyPratice_BodyStrong" AddV="1"/>
+			<!--炼体者肉体自愈率%-->
+			<li Name="BodyPratice_BodyRecover" AddV="1"/>
+			<!--真炁最大值-->
+			<li Name="BodyPratice_MaxZhenQi" AddV="1"/>
+			<!--真炁恢复速度基础值-->
+			<li Name="BodyPratice_RecoverZhenQi" AddV="5"/>
+			<!--回气状态下的回气速度%/秒-->
+			<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="10"/>
+			<!--淬体速度-->
+			<li Name="BodyPratice_QuenchingSpeed" AddV="0.05"/>
+			<!--吞噬物品的最高品阶-->
+			<li Name="BodyPractice_EatItemMaxRate" AddV="1"/>
+			<!--吞噬后得到精华的几率提升比率-->
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="0.5"/>
+			<!--吞噬后获得精华数量的提升比率-->
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="0.5"/>
+			<!--额外吐纳效果加成-->
+			<li Name="BodyPractice_Other_TunaAddp" AddV="0.2"/>
+
+			<!--=========== 只对启用的秘体生效，丹药可能无效，待测试 ===========-->
+			<!--秘体威力全局加值-->
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="5"/>
+			<!--秘体坚韧全局加值-->
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="5"/>
+			<!--秘体攻击命中率全局加值-->
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.1"/>
+			<!--秘体防御成功率全局加值-->
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.1"/>
+			<!--秘体法宝镇压概率全局加值-->
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/>
+			<!--秘体灵气护盾穿透全局加值-->
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="1"/>
+			<!--秘体真炁恢复速度加成-->
+			<li Name="BodyPratice_SuperPartRecoverAddP" AddV="1"/>
+			<!--=========== 只对启用的秘体生效，丹药可能无效，待测试 ===========-->
+
+		
+			<!--激狂之怒倍率加值-->
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="1"/>
+			<!--痛苦追忆最大记忆数量-->
+			<li Name="BodyPractice_AngerFireNum" AddV="1"/>
+			<!--激狂之怒持续时间-->
+			<li Name="BodyPractice_AngerFireDuration" AddV="0.2"/>
+			<!--饱食度最大值加值-->
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="2"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>
