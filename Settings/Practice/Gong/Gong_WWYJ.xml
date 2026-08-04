@@ -1,0 +1,105 @@
+﻿<!-- 未完工 先屏蔽
+<Gongs><List>
+	<Gong Name="Gong_WWYJ_None">   
+		<DisplayName>青山剑典万物一</DisplayName>
+		<Desc>青山万五一剑诀乃青山宗九剑剑诀总纲，集承天、绝剑、雪流、苍鸟、无端、六龙、七梅、八方、九死于一体，炼成后天下无敌。但对天分要求很高，非天道之才不可学。</Desc>
+		<SelectDesc>此功法剑法双修，但突破瓶颈时需要经历多次天劫考验。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>9, 9, 9, 9, 9</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Hide>3</Hide>
+		<Skill> 
+			<li>chumo</li>
+			<li>kaiguang</li>
+			<li>ciqi</li>
+			<li>cuiti</li>
+		</Skill>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>无彰境</DisplayName>
+				<Desc></Desc>
+				<Value>1200</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>有仪</DisplayName>
+						<Desc>形体保神，各有仪则，谓之性。[color=#D06508]\n基础成功率50%。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>0.5</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>抱神</DisplayName>
+						<Desc>道心初成，天降雷劫阻成道。</Desc>
+						<ThunderValue>1000</ThunderValue>
+						<NeckCountdown>4900</NeckCountdown>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>破海境</DisplayName>
+				<Desc></Desc>
+				<Value>4000</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>知通</DisplayName>
+						<Desc>立之本原而知通于神。[color=#D06508]\n基础成功率30%[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.3</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>守一</DisplayName>
+						<Desc>守其一以处其和。[color=#D06508]\n基础成功率30%[/color]</Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>通天境</DisplayName>
+				<Desc></Desc>
+				<Value>36000</Value>
+				<Necks>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>承意</DisplayName>
+						<Desc>彼意自然，故承而用之，则夫万物各全其我。[color=#D06508]\n基础成功率30%[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.3</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>游野</DisplayName>
+						<Desc>大道通天，天降雷劫阻成道。</Desc>
+						<ThunderValue>10000</ThunderValue>
+						<NeckCountdown>4900</NeckCountdown>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>藏天下</DisplayName>
+				<Desc></Desc>
+				<Value>656000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>藏天</DisplayName>
+						<Desc>向天地索取。而天地无限，自身有限，终不自由。唯有将自己化为自然，不索不藏不丢，才可万物皆可为己用。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>万物一</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>520000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs> -->
