@@ -1,0 +1,34 @@
+<BPQuenchingMethods><List>
+	
+	<Def Name="BPQuenchingMethods_1"><!--淬炼之法-->
+		<DisplayName>无极炼体(改)</DisplayName>
+		<Desc>经王大仙改良后的神级淬体之法。每次运转此法会对目标部位进行1次神级淬炼，高速，无材料消耗，必出橙。</Desc> 
+		<RollCount>1</RollCount> 
+		<CycleScaleAddtion>-0.7</CycleScaleAddtion>
+		<LabelMoreCount>10</LabelMoreCount>
+		<CostScaleAddtion>-1</CostScaleAddtion>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="2000"/>
+			<li Name="Cache4" Value="500"/>
+			<li Name="Cache5" Value="500"/>
+			<li Name="Cache6" Value="500"/>
+			<li Name="Cache7" Value="500"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag>NEEDCACHE_Cache4</SpecialFlag>
+	</Def>
+	
+	<Def Name="BPQuenchingMethods_ReQuenching"><!--洗点之法-->
+		<DisplayName>毁炼之法(改)</DisplayName>
+		<Desc>经王大仙改良后,借助灵气产物与炼体者之躯相斥的特性，以任意精华将某个部位炼体之功化散，使之回归到凡胎之体的状态。</Desc>
+		<RollCount>1</RollCount>
+		<!-- <ItemNeed>Item_BodyPractice_XianDaoJingHua</ItemNeed> -->
+		<CycleScaleAddtion>-0.9</CycleScaleAddtion>
+		<LabelMoreCount>-1</LabelMoreCount>
+		<CostScaleAddtion>-1</CostScaleAddtion>
+		<CantLoop>1</CantLoop>
+		<SpecialFlag>RESET</SpecialFlag>
+	</Def>
+	
+</List></BPQuenchingMethods>
