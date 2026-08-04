@@ -1,0 +1,381 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="CustomDanBase" Parent="DanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>自定义丹药</ThingName>
+		<TexPath>Spr\Object\danyao_ds.png</TexPath>
+		<Desc>自定义丹药</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1"/>
+					<SalePrice Value="9999" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1" />
+					<SalePrice Value="9999" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1" />
+					<SalePrice Value="9999" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>1000</PracticeNutrition>
+			</Food>	
+			<Elixir>
+				<!-- <Modifier>Dan_IncreaseLife_Gai</Modifier> -->
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_IncreaseLife_Gai" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>大圣丹</ThingName>
+		<TexPath>Spr\Object\danyao_ds.png</TexPath>
+		<Desc>寿命增加三甲子，天谴减10，道行减50，基本灵气增加1000，基本灵气增加100%，精元增加1000，可一直服用。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>1000</PracticeNutrition>
+			</Food>	
+			<Elixir>
+				<Modifier>Dan_IncreaseLife_Gai</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_GiantLing" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>巨灵丹</ThingName>
+		<TexPath>Spr\Object\danyao_juling.png</TexPath>
+		<Desc>可以补充五百万灵气的神奇丹药，可一直服用。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly><!--仅内门可以服用-->
+				<Modifier>Dan_Giant_Ling</Modifier>
+				<Ling>5000000</Ling>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "100"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_GreateLing" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>大灵丹</ThingName>
+		<TexPath>Spr\Object\danyao_daling.png</TexPath>
+		<Desc>可以补充一百万灵气的神奇丹药，可一直服用。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly><!--仅内门可以服用-->
+				<Modifier>Dan_Greate_Ling</Modifier>
+				<Ling>1000000</Ling>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "100"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_ZhuLongNeiDan" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>烛龙内丹</ThingName>
+		<TexPath>Spr\object\danyao_longzhu.png</TexPath>
+		<Desc>以烛龙内丹炼制而成的灵丹，服用可将其炼化分神，额外驾驭五件法宝。只有第一次服用有效。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<Modifier>Dan_FabaoNumAdd5</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1000"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>25</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_NiuBiLieTianDan" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>牛逼裂天丹</ThingName>
+		<TexPath>Spr\object\danyao.png</TexPath>
+		<Desc>太古时代的神丹，据说是王大仙集撕裂天地窃取天道之精华而炼制，其炼制方法早已失传。服用此丹可于元神中重演开天辟地，以获得五道元神分神。此丹可一直服用。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly><!--仅内门可以服用-->
+				<Lingering>1</Lingering>
+				<GodSoulCount>5</GodSoulCount>
+				<Fesistance>1</Fesistance>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "9999"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+
+
+	<ThingDef Type="Item" Name="Item_Dan_XinzhaiWan" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>心斋丸</ThingName>
+		<TexPath>Spr\object\danyao_z.png</TexPath>
+		<Desc>以众生信仰炼制而成的灵丹，服用可降低心绪。</Desc>	
+		<Rate>12</Rate>	
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<Modifier>Dan_XinzhaiWan</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1000"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>25</Value> 
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_CuiTiShenDan" Parent="CustomDanBase">
+		<MaxStack>1000</MaxStack>
+		<ThingName>淬体神丹</ThingName>
+		<TexPath>Spr\object\lingdan.png</TexPath>
+		<Desc>集天地日月之精华而成的灵丹，体修服用可获得各种稀有精华，且少量增强各项属性，可一直服用。</Desc>	
+		<Rate>9</Rate>	
+		<Beauty>125</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Lingering>1</Lingering>
+				<Modifier>Dan_CuiTiShenDan</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1000"/>
+				</CostItems>
+			</BeMade> 
+			<DevourDatas>
+				<!--生机精华-->
+				<!--<li Name="Item_BodyPractice_ShengMingLv1" Count="99" Rate="1"/>-->
+				<!--生命本源-->
+				<!--<li Name="Item_BodyPractice_ShengMingLv2" Count="99" Rate="1"/>-->
+				<!--造化命元-->
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="99" Rate="1"/>
+				<!--死灵之息-->
+				<li Name="Item_BodyPractice_SiWang" Count="99" Rate="1"/>
+				<!--污秽之精华-->
+				<li Name="Item_BodyPractice_WuHui" Count="99" Rate="1"/>
+
+				<!--无形之精-->
+				<li Name="Item_BodyPractice_WuXing" Count="99" Rate="1"/>
+
+				<!--妖兽精华-->
+				<!--古兽骨粉-->
+				<li Name="Item_BodyPractice_GuShouGuFen" Count="99" Rate="1"/>
+				<!--古兽精血-->
+				<li Name="Item_BodyPractice_GuShouJingXue" Count="99" Rate="1"/>
+				<!--大妖元精-->
+				<li Name="Item_BodyPractice_DaYaoYuanJing" Count="99" Rate="1"/>
+				<!--蛟龙元精-->
+				<li Name="Item_BodyPractice_JiaoLongYuanJing" Count="99" Rate="1"/>
+				<!--凶凤元精-->
+				<li Name="Item_BodyPractice_XiongFengYuanJing" Count="99" Rate="1"/>
+				<!--烛龙元精-->
+				<li Name="Item_BodyPractice_ZhuLongYuanJing" Count="99" Rate="1"/>
+
+				<!--先天金精-->
+				<li Name="Item_BodyPractice_EXJin" Count="99" Rate="1"/>
+				<!--先天木精-->
+				<li Name="Item_BodyPractice_EXMu" Count="99" Rate="1"/>
+				<!--先天水精-->
+				<li Name="Item_BodyPractice_EXShui" Count="99" Rate="1"/>
+				<!--先天火精-->
+				<li Name="Item_BodyPractice_EXHuo" Count="99" Rate="1"/>
+				<!--先天土精-->
+				<li Name="Item_BodyPractice_EXTu" Count="99" Rate="1"/>
+				<!--风水灵机-->
+				<li Name="Item_BodyPractice_FengShuiLing" Count="99" Rate="1"/>
+				<!--风水煞力-->
+				<li Name="Item_BodyPractice_FengShuiSha" Count="99" Rate="1"/>
+				<!--萌发之精华-->
+				<li Name="Item_BodyPractice_Chun" Count="99" Rate="1"/>
+				<!--盛放之精华-->
+				<li Name="Item_BodyPractice_Xia" Count="99" Rate="1"/>
+				<!--衰亡之精华-->
+				<li Name="Item_BodyPractice_Qiu" Count="99" Rate="1"/>
+				<!--归藏之精华-->
+				<li Name="Item_BodyPractice_Dong" Count="99" Rate="1"/>
+				<!--永寂之精髓-->
+				<li Name="Item_BodyPractice_YongYe" Count="99" Rate="1"/>
+
+				
+				<!--劫灭精华-->
+				<li Name="Item_BodyPractice_JieMie" Count="99" Rate="1"/>
+				<!--太虚精华-->
+				<li Name="Item_BodyPractice_TaiXu" Count="99" Rate="1"/>
+				<!--玄天紫气-->
+				<li Name="Item_BodyPractice_XuanTian" Count="99" Rate="1"/>
+				<!--九阳真华-->
+				<li Name="Item_BodyPractice_JiuYang" Count="99" Rate="1"/>
+				<!--玄月真精-->
+				<li Name="Item_BodyPractice_XuanYue" Count="99" Rate="1"/>
+				<!--太阳精华-->
+				<li Name="Item_BodyPractice_TaiYang" Count="99" Rate="1"/>
+				<!--太阴精华-->
+				<li Name="Item_BodyPractice_TaiYin" Count="99" Rate="1"/>
+				<!--仙髓-->
+				<li Name="Item_BodyPractice_XianSui" Count="99" Rate="1"/>
+				<!--神髓-->
+				<li Name="Item_BodyPractice_ShenSui" Count="99" Rate="1"/>
+
+				<!--吃奇观核心-->
+				<!--宇宙之精华-->
+				<li Name="Item_BodyPractice_BaBao" Count="11" Rate="0.1"/>
+				<!--天地开辟之精华-->
+				<li Name="Item_BodyPractice_WanDao" Count="11" Rate="0.1"/>
+				<!--阴阳之精华-->
+				<li Name="Item_BodyPractice_QiQing" Count="11" Rate="0.1"/>
+				<!--时空衍生之精华-->
+				<li Name="Item_BodyPractice_ZhouTian" Count="11" Rate="0.1"/>
+				<!--始终之精华-->
+				<li Name="Item_BodyPractice_XuanYang" Count="11" Rate="0.1"/>
+				<!--生灭之精华-->
+				<li Name="Item_BodyPractice_Jian" Count="11" Rate="0.1"/>
+				<!--万灵生发之精华-->
+				<li Name="Item_BodyPractice_LingYu" Count="11" Rate="0.1"/>
+				<!--时空尽衰之精华-->
+				<li Name="Item_BodyPractice_WanGu" Count="11" Rate="0.1"/>
+				<!--天地归寂之精华-->
+				<li Name="Item_BodyPractice_XuanCi" Count="11" Rate="0.1"/>
+				<!--万物陨灭之精华-->
+				<li Name="Item_BodyPractice_QiSha" Count="11" Rate="0.1"/>
+				<!--造化之精华-->
+				<li Name="Item_BodyPractice_XuanYin" Count="11" Rate="0.1"/>
+				<!--宇宙之精华-->
+				<li Name="Item_BodyPractice_BaBao" Count="11" Rate="0.1"/>
+
+			</DevourDatas>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>25</Value> 
+		</Element>
+	</ThingDef>
+
+</List></ThingDefs>

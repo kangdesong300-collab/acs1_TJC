@@ -1,0 +1,57 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="Item_WRJ_SP_Trousers1" Parent="TrousersBase">
+	<ThingName>纯阳下装</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Desc>凝聚纯阳之力的法衣，穿着可提高各项技能等级，并有效降低五行属性伤害，并可使人御风而行，十分玄妙。</Desc>
+	<Rate>12</Rate>
+	<Beauty>15</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>1000</BurningPoint>
+	</Flammability>
+	<Item Lable="Trousers">
+		<NotRandom>1</NotRandom>
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>100</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "SPStuffCategories"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 	
+		<Equip>
+			<NeedSex>Male</NeedSex>
+			<ModelID>8</ModelID>
+			<TemperatureMaxAdd>250</TemperatureMaxAdd>
+			<TemperatureMinAdd>-100</TemperatureMinAdd>
+			<ToolModifier>Modifier_Item_WRJ_SP_Trousers1</ToolModifier>
+		</Equip> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>		
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_WRJ_SP_Trousers2" Parent="Item_WRJ_SP_Trousers1">
+	<ThingName>火浣下裳</ThingName>
+	<TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+	<Desc>以异兽火光鼠之皮缝制的法衣，穿着可提高各项技能等级，并有效降低火属性伤害，并可使人御风而行，十分玄妙。</Desc>
+	<Item Lable="Trousers">
+		<Equip>
+			<NeedSex>Female</NeedSex>
+			<ModelID>7</ModelID>
+			<ToolModifier>Modifier_Item_WRJ_SP_Trousers2</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+
+</List></ThingDefs>

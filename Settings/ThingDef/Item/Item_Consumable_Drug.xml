@@ -1,0 +1,196 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_Jin_LingCrystal" Parent="DrugBase">
+	
+		<ThingName>金之灵晶</ThingName>
+		<TexPath>Spr\Ling\jinlinggen.png</TexPath>	
+		<Desc>天地精华汇聚而成，五行属金，蕴含磅礴的灵气。传说王大仙的神秘淘宝店才能凝聚。一生只可服用一次。</Desc>
+		<MaxStack>1</MaxStack>
+		<MaxHitPoints>2000</MaxHitPoints>
+		<Rate>12</Rate>
+		<Beauty>150</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+			<FlameSpawnThingDef>0</FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="1"/>
+					<SalePrice Value="9999" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1" />
+					<SalePrice Value="9999" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1" />
+					<SalePrice Value="9999" />
+				</li>
+			</Prices>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>魂,丹,灵,珠</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Ling</li>
+				<li>Sharp</li>
+			</PhysicalLables>
+			<Rot>
+				<RotSpeed>0</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<PracticeNutrition>5000</PracticeNutrition>
+			</Food>	
+			<Elixir>
+				<RecoveryLable>
+					<li>None</li>
+					<li>OldScar</li>
+					<li>Jin</li>
+					<li>Mu</li>
+					<li>Shui</li>
+					<li>Huo</li>
+					<li>Tu</li>
+					<li>Ling</li>
+				</RecoveryLable>
+				<RecoveryValue>1000</RecoveryValue>
+				<RecoveryDuration>0.04</RecoveryDuration>
+				<Ling>1000000</Ling>
+				<!-- <Modifier>Modifier_Item_Jin_LingCrystal</Modifier> -->
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			<BeMaterial>
+				<NamePrefix>灵金</NamePrefix>
+				<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>150</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>100</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "100"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<!-- <StoryBnts>
+			<li Name="炼化" Desc="尝试炼化天道本源。"  Appoint="2" Story="Story_Item_BenYuan" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts> -->
+		<Ling>
+			<AddionLing>200</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.95</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>500</Accommodate>
+			<LingSource>500</LingSource>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>50</Value>         
+			<Radius>3</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>5</Radius>
+			<Color>FFFF66FF</Color>
+		</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Mu_LingCrystal" Parent="Item_Jin_LingCrystal">
+	
+		<ThingName>木之灵晶</ThingName>
+		<TexPath>Spr\Ling\mulinggen.png</TexPath>	
+		<Desc>天地精华汇聚而成，五行属木，蕴含磅礴的灵气。传说王大仙的神秘淘宝店才能凝聚。一生只可服用一次。</Desc>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Drug">
+			<!--<Elixir>
+				 <Modifier>Modifier_Item_Jin_LingCrystal</Modifier> 
+			</Elixir>-->
+			<BeMaterial>
+				<NamePrefix>灵木</NamePrefix>			
+			</BeMaterial>
+		</Item>
+		<Element>
+			<Kind>Mu</Kind>
+		</Element>
+		<Light>
+			<Color>66FF66FF</Color>
+		</Light>
+		</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Shui_LingCrystal" Parent="Item_Jin_LingCrystal">
+		<ThingName>水之灵晶</ThingName>
+		<TexPath>Spr\Ling\shuilinggen.png</TexPath>	
+		<Desc>天地精华汇聚而成，五行属水，蕴含磅礴的灵气。传说王大仙的神秘淘宝店才能凝聚。一生只可服用一次。</Desc>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Drug">
+			<!--<Elixir>
+				 <Modifier>Modifier_Item_Jin_LingCrystal</Modifier> 
+			</Elixir>-->
+			<BeMaterial>
+				<NamePrefix>灵水</NamePrefix>			
+			</BeMaterial>
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+		</Element>
+		<Light>
+			<Color>33CCFFFF</Color>
+		</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Huo_LingCrystal" Parent="Item_Jin_LingCrystal">
+		<ThingName>火之灵晶</ThingName>
+		<TexPath>Spr\Ling\huolinggen.png</TexPath>	
+		<Desc>天地精华汇聚而成，五行属火，蕴含磅礴的灵气。传说王大仙的神秘淘宝店才能凝聚。一生只可服用一次。</Desc>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Drug">
+			<!--<Elixir>
+				 <Modifier>Modifier_Item_Jin_LingCrystal</Modifier> 
+			</Elixir>-->
+			<BeMaterial>
+				<NamePrefix>灵火</NamePrefix>			
+			</BeMaterial>
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+		</Element>
+		<Light>
+			<Color>FFFF66E6</Color>
+		</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Tu_LingCrystal" Parent="Item_Jin_LingCrystal">
+		<ThingName>土之灵晶</ThingName>
+		<TexPath>Spr\Ling\tulinggen.png</TexPath>	
+		<Desc>天地精华汇聚而成，五行属土，蕴含磅礴的灵气。传说王大仙的神秘淘宝店才能凝聚。一生只可服用一次。</Desc>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="Drug">
+			<!--<Elixir>
+				 <Modifier>Modifier_Item_Jin_LingCrystal</Modifier> 
+			</Elixir>-->
+			<BeMaterial>
+				<NamePrefix>灵土</NamePrefix>			
+			</BeMaterial>
+		</Item>
+		<Element>
+			<Kind>Tu</Kind>
+		</Element>
+		<Light>
+			<Color>FF9933FF</Color>
+		</Light>
+	</ThingDef>
+	
+</List></ThingDefs>

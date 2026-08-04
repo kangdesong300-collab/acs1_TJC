@@ -1,0 +1,411 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="Item_WRJ_Sword_Frostmourne" Parent="EquipmentBase">
+	<ThingName>霜之哀伤</ThingName>
+	<TexPath>Spr\Object\frostmourne01.png</TexPath>
+	<FabaoTexPath>Spr\Object\frostmourne01.png</FabaoTexPath>	
+	<Desc>人族王子阿尔萨斯的配剑，远古时期被王大仙无意中获得，传给有缘人。</Desc>
+	<ModScale>0.05</ModScale>
+	<Beauty>150</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<!-- <NotRandom>2</NotRandom> -->
+	<KeepModelColor>1</KeepModelColor><!--保持模型贴图颜色，不会受主材料影响-->
+	<ElementKind>None</ElementKind>
+	<Item Lable="Weapon">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="9999"/>
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+		</Prices>
+		<FabaoSuffix>剑</FabaoSuffix>
+		<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>	
+			<Damage>72</Damage>
+			<AttackSpeed>1.8</AttackSpeed>
+			<AttackRange>3.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.4"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>		
+			<!-- <ModPath>Mod/Weapon/FROSTMOURNE.FBX</ModPath> -->
+		</Equip>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "吸收1次永夜的气息" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+			     <Ability Kind="HitAddRecovery" fParam1="0.5"  Desc="造成伤害的50%会补充为法宝自身的灵气。"/>
+			     <Ability Kind="HitCountCostSkill" nParam1="3"  sParam1="DamageSkill_4" Desc="每3次攻击会对目标敌人发动一次法术"/>
+			     <Ability Kind="Sync_AddFlag" sParam1="FLAG_ITEM_RESURRECTION" nParam1 = "1" Desc="以破碎为代价，抵挡一次死亡并恢复所有伤害。" />
+			     <Ability Kind="HitCountAddMirror" nParam1="3" fParam1="10" Desc="每攻击3次，产生1道剑光分化，持续10秒"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FabaoActiveWeather({'PermanentNight'})</UseLua>	
+	</Item>
+	<Ling>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	</ThingDef>
+
+
+	<ThingDef Type="Item" Name="Item_WRJ_ShenLingZhu" Parent="EquipmentBase">
+	<ThingName>圣灵珠</ThingName>
+	<TexPath>Spr\Object\lingzhu.png</TexPath>
+	<FabaoTexPath>Spr\Object\lingzhu.png</FabaoTexPath>
+	<Desc>王大仙游历天下无意间获得的灵珠，内含强烈的五行波动。\n【佩戴效果】\n 全技能超越10级，护盾增强，5系伤害抵抗增强。\n【秘宝效果】\n 五行伤害加深，概率暴击，失去佩戴效果。（装备后右键吸收雷暴天气）</Desc>
+	<Beauty>150</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<NotRandom>2</NotRandom>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Treasure" Kind="Equipment">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="9999"/>
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+		</Prices>
+		<FabaoSuffix>珠</FabaoSuffix>
+		<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>	
+			<ToolModifier>Modifier_Item_ShengLingZhu</ToolModifier>
+		</Equip>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "吸收1次雷暴的气息" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1" nParam1="2" Desc="与法宝拼斗时，100%造成2倍伤害。"/>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="0.3" fParam2="4" nParam1="0" Desc="造成伤害时，有30%的几率造成5倍伤害。"/>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="2" nParam1="0" sParam1="Jin" Desc="对金属性目标伤害加深200%"/>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="2" nParam1="0" sParam1="Mu" Desc="对木属性目标伤害加深200%"/>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="2" nParam1="0" sParam1="Shui" Desc="对水属性目标伤害加深200%"/>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="2" nParam1="0" sParam1="Huo" Desc="对火属性目标伤害加深200%"/>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="2" nParam1="0" sParam1="Tu" Desc="对土属性目标伤害加深200%"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FabaoActiveWeather({'LightningStorm','LightningStormNoLong'})</UseLua>	
+	</Item>
+	<Ling>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_WRJ_XL_yejiao" Parent="EquipmentBase">
+	<ThingName>夜皎</ThingName>
+	<TexPath>Spr\Object\XL_yejiao.png</TexPath>
+	<FabaoTexPath>Spr\Object\XL_yejiao.png</FabaoTexPath>
+	<Desc>王大仙游历天下无意间获得的项链，落花生芳春，孤月皎清夜。\n【佩戴效果】\n 全技能超越5级，护盾增强，5系伤害抵抗增强。\n【秘宝效果】\n 一剑，护盾穿透，缴械，飞行增伤，失去佩戴效果。（装备后右键吸收雷暴天气）</Desc>
+	<Beauty>150</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<NotRandom>2</NotRandom>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Treasure" Kind="Equipment">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="9999"/>
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+		</Prices>
+		<FabaoSuffix>链</FabaoSuffix>
+		<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>	
+			<ToolModifier>Modifier_Item_XL_yejiao</ToolModifier>
+		</Equip>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "吸收1次雷暴的气息" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+				<Ability Kind="FristHitPowerUp" fParam1="5" Desc="第一剑威力增加500%，法宝补充灵气重置。"/>
+			    <Ability Kind="HitCountAddDamage" nParam1="2" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每2次攻击修行者本体，会穿透护盾造成额外伤害。"/>
+			    <Ability Kind="FlyDamageAddP" fParam1="0.05" Desc="飞剑每飞行1秒，基础威力就提高5%，返回后清空。"/>
+			    <Ability Kind="HitSameFabaoAndEffect" nParam1="3" nParam2="1" Desc="每攻击同一个法宝3次，可使其失效，持续时间与其品阶有关。"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FabaoActiveWeather({'LightningStorm','LightningStormNoLong'})</UseLua>	
+	</Item>
+	<Ling>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_WRJ_JZ_xuanjiu" Parent="EquipmentBase">
+	<ThingName>玄酒</ThingName>
+	<TexPath>Spr\Object\JZ_xuanjiu.png</TexPath>
+	<FabaoTexPath>Spr\Object\JZ_xuanjiu.png</FabaoTexPath>
+	<Desc>王大仙游历天下无意间获得的戒指，玛瑙一泓浮翠玉，瓠犀终日凛天风。\n【佩戴效果】\n 全技能超越5级，护盾增强，5系伤害抵抗增强。\n【秘宝效果】\n 护体、术法、御剑技能提高10级，环绕周身，失去佩戴效果。（装备后右键吸收尘暴天气）</Desc>
+	<Beauty>150</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<NotRandom>2</NotRandom>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Treasure" Kind="Equipment">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="9999"/>
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+		</Prices>
+		<FabaoSuffix>戒</FabaoSuffix>
+		<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>	
+			<ToolModifier>Modifier_Item_JZ_xuanjiu</ToolModifier>
+		</Equip>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "吸收尘暴天气1次" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_Longxinyinyanggui" Desc="护体技能提高10"/>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_Wuqileifu" Desc="术法技能提高10"/>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_Yuanshenxinjian" Desc="御剑技能提高10"/>
+				<Ability Kind="CantAttack" Desc="环绕周身不会主动进攻，专注防御。"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FabaoActiveWeather({'DustStorm'})</UseLua>	
+	</Item>
+	<Ling>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_WRJ_SP_liujingyanghui" Parent="EquipmentBase">
+	<ThingName>流景扬辉</ThingName>
+	<TexPath>Spr\Object\SP_liujingyanghui.png</TexPath>
+	<FabaoTexPath>Spr\Object\SP_liujingyanghui.png</FabaoTexPath>
+	<Desc>王大仙游历天下无意间获得的饰品，佩则结绿悬黎，宝之妙微。符彩照灿，流景扬辉。\n【佩戴效果】\n 全技能超越5级，护盾增强，5系伤害抵抗增强。\n【秘宝效果】\n 攻击概率增伤，法宝属性增强50%，失去佩戴效果。（装备后右键吸收瘴气天气）</Desc>
+	<Beauty>150</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<NotRandom>2</NotRandom>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Treasure" Kind="Equipment">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="9999"/>
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+		</Prices>
+		<FabaoSuffix>佩</FabaoSuffix>
+		<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>	
+			<ToolModifier>Modifier_Item_SP_liujingyanghui</ToolModifier>
+		</Equip>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "吸收瘴气天气1次" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+				<Ability Kind="AtkRateDamageAddp" fParam1="0.1" fParam2="0.5" nParam1="1" nParam2="1" Desc="攻击敌方本体时有10%几率额外造成目标当前灵气50%的附加伤害。"/>
+			    <Ability Kind="Sync_AddEquptData" sParam1="NpcFight_FabaoPowerAddP" fParam2="0.3" nParam1="1" Desc="从根本上提高自身法宝威力加成50%。"/>
+				<Ability Kind="Sync_AddEquptData" sParam1="NpcFight_FabaoRepelResistanceAddV" fParam2="0.3" nParam1="1" Desc="从根本上提高自身法宝抗击退50%。"/>
+				<Ability Kind="Sync_AddEquptData" sParam1="NpcFight_FabaoTurnSpeedAddP" fParam2="0.3" nParam1="1" Desc="从根本上提高自身法宝转弯速度50%。"/>
+				<Ability Kind="Sync_AddEquptData" sParam1="NpcFight_FabaoLingRecoverAddP" fParam2="0.3" nParam1="1" Desc="从根本上提高自身法宝灵气恢复50%。"/>
+				<Ability Kind="Sync_AddEquptData" sParam1="NpcFight_FabaoRepelDistanceAddV" fParam2="0.3" nParam1="1" Desc="从根本上提高自身法宝击退距离50%。"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FabaoActiveWeather({'Miasma'})</UseLua>	
+	</Item>
+	<Ling>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_WRJ_SP_furonghonge" Parent="EquipmentBase">
+	<ThingName>芙蓉红萼</ThingName>
+	<TexPath>Spr\Object\SP_furonghonge.png</TexPath>
+	<FabaoTexPath>Spr\Object\SP_furonghonge.png</FabaoTexPath>
+	<Desc>王大仙游历天下无意间获得的饰品，涉江采芙蓉，饰于白玉上，是为芙蓉佩。\n【佩戴效果】\n 全技能超越5级，护盾增强，5系伤害抵抗增强。\n【秘宝效果】\n 被动增伤，耗灵增伤，吸灵，失去佩戴效果。（装备后右键吸收焚风天气）</Desc>
+	<Beauty>150</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<NotRandom>2</NotRandom>
+	<ElementKind>None</ElementKind>
+	<Item Lable="Treasure" Kind="Equipment">
+		<Prices>
+			<TalkType>3</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="9999"/>
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="9999" />
+				<SalePrice Value="9999" />
+			</li>
+		</Prices>
+		<FabaoSuffix>佩</FabaoSuffix>
+		<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "100"/>
+			</CostItems>
+		</BeMade> 		
+		<Equip>	
+			<ToolModifier>Modifier_Item_SP_furonghonge</ToolModifier>
+		</Equip>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "吸收焚风天气1次" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+				<Ability Kind="AgeAddPowerUp" fParam1="5" fParam2="0.5" Desc="使用者越接近寿命极限法宝威力大" />
+				<Ability Kind="HitAddRecovery" fParam1="0.5"  Desc="造成伤害的50%会补充为法宝自身的灵气。"/>
+				<Ability Kind="LastLingCostPowerUp" nParam1="500" fParam1="0.1" fParam2="10"  Desc="每消耗500点灵气，伤害提高10%，最高提高1000%。法宝补充灵气时重置。"/>
+				<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1" nParam1="1" Desc="攻击敌方本体时，造成2倍伤害。"/>
+				<Ability Kind="DanCountAddPowerUp" fParam1="0.05" Desc="每服用过一种丹药，威力提高5%。"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FabaoActiveWeather({'FohnNoFeng','Fohn'})</UseLua>	
+	</Item>
+	<Ling>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>100</Accommodate>
+	</Ling>
+	</ThingDef>
+
+</List></ThingDefs>
